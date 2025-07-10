@@ -21,10 +21,10 @@ go get github.com/ppdoew/lztapi
 
 ```go
 import (
-  "github.com/ppdoew/lztapi/client"
+  "github.com/ppdoew/lztapi"
 )
 
-client := client.NewSession("YOUR_JWT_TOKEN")
+client := lztapi.CreateClient("YOUR_JWT_TOKEN")
 ```
 
 This will initialize:
@@ -75,12 +75,11 @@ The client library is organized into modules. For example, the Market module:
 
 ```go
 import (
-  "github.com/ppdoew/lztapi/client"
-  "github.com/ppdoew/lztapi/module/market"
+  "github.com/ppdoew/lztapi"
 )
 
-apiClient := client.NewSession("TOKEN")
-marketClient := market.New(apiClient)
+apiClient := lztapi.CreateClient("TOKEN")
+marketClient := lztapi.ModuleMarket(apiClient)
 ```
 
 ## Batch Requests
