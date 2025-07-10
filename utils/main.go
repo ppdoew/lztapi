@@ -20,7 +20,7 @@ func GetJson(response *resty.Response) map[string]any {
 
 	err := json.Unmarshal(response.Body(), &result)
 	if err != nil {
-		return map[string]any{"error": []string{"undefined"}}
+		return map[string]any{"errors": []string{"undefined"}}
 	}
 
 	return result
