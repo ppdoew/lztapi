@@ -1,9 +1,9 @@
 package client
 
 import (
-	"LztApi/lztapi/config"
 	"context"
 	"errors"
+	"github.com/ppdoew/lztapi/config"
 	"net/url"
 	"strings"
 	"time"

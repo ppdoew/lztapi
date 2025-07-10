@@ -1,11 +1,11 @@
 package market
 
 import (
-	"LztApi/lztapi/dto"
-	"LztApi/lztapi/utils"
 	"fmt"
 	"github.com/go-resty/resty/v2"
 	"github.com/google/go-querystring/query"
+	"github.com/ppdoew/lztapi/dto"
+	"github.com/ppdoew/lztapi/utils"
 	"net/url"
 )
 

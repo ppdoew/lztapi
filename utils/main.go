@@ -1,9 +1,9 @@
 package utils
 
 import (
-	"LztApi/lztapi/errors"
 	"encoding/json"
 	"github.com/go-resty/resty/v2"
+	"github.com/ppdoew/lztapi/errors"
 )
 
 func GetJson(response *resty.Response) map[string]any {

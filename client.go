@@ -1,8 +1,8 @@
 package lztapi
 
 import (
-	"LztApi/lztapi/client"
-	"LztApi/lztapi/service/market"
+	"github.com/ppdoew/lztapi/client"
+	"github.com/ppdoew/lztapi/service/market"
 )
 
 func CreateClient(token string) *client.LztClient {

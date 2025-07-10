@@ -1,9 +1,9 @@
 package market
 
 import (
-	"LztApi/lztapi/dto"
 	"fmt"
 	"github.com/go-resty/resty/v2"
+	"github.com/ppdoew/lztapi/dto"
 )
 
 func (m *Market) AllUserAccounts(params any) (*dto.Response, error) {

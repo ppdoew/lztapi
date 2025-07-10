@@ -1,6 +1,6 @@
 package market
 
-import "LztApi/lztapi/client"
+import "github.com/ppdoew/lztapi/client"
 
 type Market struct {
 	cli *client.LztClient
